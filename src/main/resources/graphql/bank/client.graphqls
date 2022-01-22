@@ -1,0 +1,8 @@
+type Client {
+    id: ID!
+    firstName: String!
+    middleNames: [String!]
+    lastName: String!
+    # recursion: a client can refer to itself
+    client: Client
+}
