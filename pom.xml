@@ -19,7 +19,10 @@
         <graphql.version>11.1.0</graphql.version>
         <lombok.version>1.18.22</lombok.version>
         <pmd.version>3.15.0</pmd.version>
+        <!--
         <playground.version>11.1.0</playground.version>
+        <voyager.version>11.1.0</voyager.version>
+        -->
     </properties>
 
     <dependencies>
@@ -44,7 +47,14 @@
         <dependency>
             <groupId>com.graphql-java-kickstart</groupId>
             <artifactId>playground-spring-boot-starter</artifactId>
-            <version>${playground.version}</version>
+            <version>${graphql.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.graphql-java-kickstart</groupId>
+            <artifactId>voyager-spring-boot-starter</artifactId>
+            <version>${graphql.version}</version>
             <scope>runtime</scope>
         </dependency>
 
@@ -57,10 +67,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
