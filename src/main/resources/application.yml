@@ -8,4 +8,13 @@ spring:
 
 graphql:
   servlet:
-    max-query-depth:
+    max-query-depth: 5
+
+  playground:
+    headers:
+      Authorization: Bearer Token
+    tabs:
+      - name: Bank account sample query
+        query: classpath:playground/bank_account.graphql
+        variables: classpath:playground/bank_account_variables.json
+    enabled: true
