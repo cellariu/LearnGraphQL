@@ -1,4 +1,4 @@
-package com.cami.graphql.learngraphql.resolver;
+package com.cami.graphql.learngraphql.resolver.bank.query;
 
 import com.cami.graphql.learngraphql.domain.bank.BankAccount;
 import com.cami.graphql.learngraphql.domain.bank.Client;
